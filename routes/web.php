@@ -3,6 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\PaymentGateway;
+use App\Livewire\Categoria;
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,8 +26,10 @@ Route::get('/checkout', function () {
     return view('checkout');
 });
 
-Route::post('/payment/success', [PaymentController::class, 'success']);
-Route::post('/payment/webhook/stripe', [PaymentController::class, 'stripeWebhook']);
+Route::get('/categorias', Categoria::class);
+
+// Route::post('/payment/success', [PaymentController::class, 'success']);
+// Route::post('/payment/webhook/stripe', [PaymentController::class, 'stripeWebhook']);
 
 Route::get('/checkout', function () {
     return view('checkout');
