@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('categorias', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_categoria');
-            $table->boolean('habilitada');
+            $table->boolean('habilitada')->default(true);
             $table->timestamps();
         });
     }
