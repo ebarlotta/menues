@@ -4,15 +4,16 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\PaymentGateway;
 use App\Livewire\Categoria;
-
-
+use App\Models\categoria as ModelsCategoria;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $tarjetas=ModelsCategoria::where('habilitada',1)->get();
+    // dd($tarjetas);
+    return view('dashboard')->with(['tarjetas'=>$tarjetas]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

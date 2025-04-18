@@ -259,6 +259,7 @@
             }
         </style>
     </head>
+
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         <div class="background-container">
             <img class="background-image" src="images/fondo.jpeg" alt="Fondo">
@@ -267,33 +268,21 @@
         <section class="hero">
             <div class="flex d-flex">
                 @if (Route::has('login'))
-                                <nav class="-mx-3 flex flex-1 justify-end">
-                                    @auth
-                                        <a
-                                            href="{{ url('/dashboard') }}"
-                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Dashboard
-                                        </a>
-                                    @else
-                                        <a
-                                            href="{{ route('login') }}"
-                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Log in
-                                        </a>
+                    <nav class="-mx-3 flex flex-1 justify-end">
+                        @auth
+                            <a href="{{ url('/dashboard') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            > Dashboard </a>
+                        @else
+                            <a href="{{ route('login') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white" style="width: max-content;"> Log in
+                            </a>
 
-                                        @if (Route::has('register'))
-                                            <a
-                                                href="{{ route('register') }}"
-                                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                            >
-                                                Register
-                                            </a>
-                                        @endif
-                                    @endauth
-                                </nav>
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white" style="width: max-content;"> Register
+                                </a>
                             @endif
+                        @endauth
+                    </nav>
+                @endif
                 <nav>
                     <a href="#" class="logo">ECO<span style="color: #ba6820; text-shadow:5px 5px  4px#0307123f">Systems.ar</span></a>
                     <div class="nav-links" style="margin-left: 40px;">
@@ -315,7 +304,7 @@
                     <h2 style="text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);">Transformamos Ideas en Experiencias Digitales</h2>
                 </div>
                 <p>Desarrollamos soluciones web innovadoras que impulsan tu negocio en la era digital con tecnología de vanguardia y diseño centrado en el usuario.</p>
-                <a href="#contact" class="cta-button">Comienza tu Proyecto</a>
+                <a href="register" class="cta-button btn btn-success bg-green-300" style="background-color: #0080009c; color: black; box-shadow: 10px 10px 10px #00000084;">Comienza tu Proyecto</a>
             </div>
         </div>
         </section>
