@@ -29,7 +29,7 @@
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" wire:click="AgregarCategoria();">Agregar</button>
             </div>
         </div>
-        <div style="background-color: antiquewhite;border-radius: 20px;box-shadow: 5px 5px 20px 5px #000; padding: 10px; margin: 10px;  max-width: 90%; width: 100%;">
+        <div style="border-radius: 20px;box-shadow: 5px 5px 20px 5px #000; padding: 10px; margin: 10px;  max-width: 90%; width: 100%;">
             <div style="justify-content: center;display: flex;">
                 <table class="table table-striped table-bordered w-full px-3">
                     <tr style=" width:100%">
@@ -37,8 +37,8 @@
                         <td><b>Opciones</b></td>
                     </tr>
                     @foreach ($categorias as $categoria)
-                        <tr style=" width:100%">
-                            <td >{{ $categoria->nombre_categoria }}</td>
+                        <tr style="border: 2px solid gray; width:100%; margin: 3px; display: revert;">
+                            <td style="background-color: white; border-radius: 10px; padding: 6px; margin: 9px; display: block;" >{{ $categoria->nombre_categoria }}</td>
                             <td style="background-color: aliceblue; width:30%">
                                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold my-1 px-4 rounded-full" wire:click="AgregarCategoria();">Modificar</button>
                                 @if($categoria->habilitada)

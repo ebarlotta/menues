@@ -12,7 +12,7 @@ class Categoria extends Component
     public function render()
     {
         $this->categorias = ModelCategorias::all();
-        return view('livewire.categoria')->layout('layouts.app');;
+        return view('livewire.categoria')->layout('layouts.app');
     }
 
     public function AgregarCategoria() {

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre_menu');
             $table->unsignedBigInteger('categoria_id');
+            $table->boolean('habilitada')->default(true);
             $table->timestamps();
 
             $table->foreign('categoria_id')->references('id')->on('categorias');

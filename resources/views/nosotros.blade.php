@@ -188,8 +188,8 @@
     
             .features-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                gap: 4rem;
             }
     
             .feature-card {
@@ -288,14 +288,7 @@
             </div>
         </section>
         <section>
-            <div class="features-grid" style="background-color: rgba(255, 255, 255, 0.5);">
-                <div class="feature-card" style="margin-top: 10px; width: 90%; text-align: center; margin: auto; margin-top: auto; margin-top: 14px;">
-                <div class="section-title">
-                    <h2 style="text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);">Transformamos Ideas en Experiencias Digitales</h2>
-                </div>
-                <p>Desarrollamos soluciones web innovadoras que impulsan tu negocio en la era digital con tecnología de vanguardia y diseño centrado en el usuario.</p>
-                <a href="register" class="cta-button btn btn-success bg-green-300" style="background-color: #0080009c; color: black; box-shadow: 10px 10px 10px #00000084;">Comienza tu Proyecto</a>
-            </div>
+            
         </div>
         </section>
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50" style="background-color: rgba(255, 255, 255, 0.5);">
@@ -303,41 +296,27 @@
                 <div class="relative w-full px-6">
                     
                     <!-- Features Section -->
-                    <section class="" id="services" style="padding-top: 30px; padding-bottom: 30px;margin: auto; width: 90%;">
-                        <div class="section-title">
-                            <h2>Nuestros Servicios</h2>
-                            <p>Soluciones tecnológicas a medida para cada necesidad</p>
-                        </div>
-                        <div class="features-grid">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div class="section-title">
-                                    <h3>Desarrollo Web</h3>
-                                </div>
-                                <p1>Sitios web personalizados, rápidos y optimizados para SEO con las últimas tecnologías del mercado.</p1>
-                            </div>
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div class="section-title">
-                                    <h3>Diseño Responsivo</h3>
-                                </div>
-                                <p1>Experiencias perfectas en todos los dispositivos, desde móviles hasta pantallas de escritorio.</p1>
-                            </div>
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <div class="section-title">
-                                    <h3>Optimización</h3>
-                                </div>
-                                <p1>Maximizamos el rendimiento de tu sitio para garantizar la mejor experiencia de usuario.</p1>
-                            </div>
-                        </div>
-                    </section>
+<section style="display: flex; justify-content: center; align-items: center; min-height: 70vh; padding: 40px;">
+  <div style="
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    text-align: center;
+  ">
+    <h2 style="color: #1a3fe1; font-size: 2em; margin-bottom: 0.5em;">
+      Sección en Construcción
+    </h2>
+    <p style="font-size: 1.1em; color: #555; margin-bottom: 1.5em;">
+      Estamos trabajando para brindarte la mejor experiencia posible. Pronto vas a poder acceder a esta sección.
+    </p>
+    <p style="font-size: 0.95em; color: #888;">
+      Gracias por tu paciencia. Volvé a visitarnos en unos días.
+    </p>
+  </div>
+</section>
+
                 </div>
             </div>
         </div>

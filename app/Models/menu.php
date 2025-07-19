@@ -9,4 +9,10 @@ class menu extends Model
 {
     /** @use HasFactory<\Database\Factories\MenuFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'nombre_menu',
+        'categoria_id',
+        'habilitada',
+    ];
 }
